@@ -1,0 +1,133 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<title>Form</title>
+<style>
+
+.dd{
+border-radius: 10px;
+margin-right:20px;
+margin-left:270px;
+width:50%;
+height:70%;
+border: 2px solid #B0C4DE;
+}
+.submit{
+padding:7px;
+background-color: #20B2AA;
+margin: 5px 0 22px 0;
+margin-right:30px;
+margin-left:10px;
+  
+  border: 2px solid #B0C4DE;
+}
+
+.drop{
+border-radius: 10px;
+padding:7px;
+background-color: #20B2AA;
+margin: 5px 0 22px 0;
+margin-right:20px;
+margin-left:10px;
+  width: 90%;
+}
+
+.text{
+border-radius: 10px;
+padding:7px;
+width:94%;
+margin-left:8px;
+
+  
+  border: 3px solid #B0C4DE;
+background-color:#FFFFE0 ;
+}
+
+.version{
+border-radius: 10px;
+padding:10px;
+width:25%;
+margin-left:8px;
+
+  
+  border: 3px solid #B0C4DE;
+background-color:#FFFFE0 ;
+}
+}
+
+.att{
+padding:7px;
+width: 90%;
+}
+
+h2{color: green;}
+h3{ align: center;
+color: white;
+margin-left:268px;
+    height: 60px;
+width:51%;
+    background-color: #B0C4DE;
+    font-size:  20px;
+}
+</style>
+
+</head>
+<body> <h2>To The New</h2><p style="text-align: right;"}><a href="www.google.com">Home &nbsp</a>
+<a href="www.google.com">Quick Help</a>
+</p>
+<h3>Bug Report</h3>
+  <header div class="dd">
+
+
+<form> 
+
+  <b>&nbsp Title</b><br> 
+  <input type="text" class=text name="title" required> 
+  <br> 
+<br>
+  <b>&nbsp Description<b><br>
+        <textarea rows="2" cols="50" class=text name="Description"
+                            id="Description"></textarea> 
+  <br> 
+<b>&nbsp Operating System<b><br>
+<select name="os" class=drop id="os"> 
+            <option value="w">Windows</option> 
+            <option value="l">Linux</option> 
+        </select> 
+<br>
+<b>&nbsp Product<b><br>
+<select name="product" class=drop id="product"> 
+            <option value="lp">Laptop</option> 
+            <option value="ph">Phone</option> 
+        </select> 
+<br><br>
+ <b>&nbsp Version<b><br> 
+  <input type="text" class=version name="version"> 
+  <br><br>
+
+<b>&nbsp License<b><br>
+<div>
+<input type="checkbox" name="Free">Free &nbsp 
+&nbsp     &nbsp <input type="checkbox" name="Business">Business
+</div>
+<br>
+<b>&nbsp Severity<b><br>
+<select name="severity" class=drop id="sev"> 
+            <option value="c">critical</option> 
+            <option value="m">minor</option> 
+        </select> 
+
+<br>
+&nbsp Attachment<br>
+<input type="file" class="att" name="upload"> 
+
+<br><br>
+<div align="right">
+  <input type="submit" class=submit value="Submit"> 
+</div>
+</form>  
+  
+
+</body> 
+</html> 
+
