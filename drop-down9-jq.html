@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function()
+		{
+  			$(".competency").change(function()
+  			{
+  				var select = $(".competency").val();
+    		$(".container").append("<p>" + select);
+  			});
+		});
+	</script>
+</head>
+<body>
+	
+	<select class="competency">
+		<option value="JVM">JVM</option>
+		<option value="Big Data">Big Data</option>
+		<option value="Python">Python</option>
+	</select>
+<div class="container">
+		<p style="color: blue">Competency added</p>
+	</div>
+
+</body>
+</html>
