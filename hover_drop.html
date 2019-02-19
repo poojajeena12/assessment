@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="jquery-3.3.1.js"></script>
+		<title>Dropdown</title>
+		<style>
+		.options p 
+		{
+			background-color: #a6db70;
+  			padding: 10px 12px;
+  			text-decoration: none;
+  			display: block;
+		}
+		.dropdown
+		{
+			padding: 16px;
+		}
+
+		.dropdown:hover .options 
+		{
+
+			display: block;
+		}
+
+		.options 
+		{  	display: none;
+			text-decoration: none;
+  			position: absolute;
+  			background-color: #adcceb;
+		}
+
+		</style>
+</head>
+<body>	
+	<span class="dropdown">
+
+  		<input type="button" class="btn" value="hover"/>
+  		<div class="options">
+    		<a href="#">option1</a><br>
+    		<a href="#">option2</a><br>
+    		<a href="#">option3</a>
+  		</div>
+	</span>
+
+</body>
+</html>
