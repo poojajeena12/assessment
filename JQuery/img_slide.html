@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <title>Q17</title>
+</head>
+
+<body>
+   <div class="slide">
+   <input type="button" class="test" value="animate"/>
+   <script src="jquery-3.3.1.js"></script>
+   <script>
+
+       $(document).ready(function () 
+       {
+           var img = ["flower1.jpg","flower2.jpg", "flower3.jpg"];
+
+           $(".test").click(function () 
+           {
+               var image = $(".slide");
+               
+               for (var i = 0; i < 3; i++) {
+                               
+               image.animate({ opacity: 0 }, 500, function () 
+               {
+                
+                    $(image.attr("src", img[i]));
+                    $(image.css('opacity', 1));
+                     
+                    
+                  });
+             }
+                
+                });
+       
+             });
+
+
+   </script>
+</div>
+</body>
+
+</html>
