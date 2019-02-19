@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<meta charset="utf-8">
+	<script>
+		$(document).ready(function(){
+			$(".test").click(function(){
+				$("div").append("<br><input type='button' class='test' value='add button'/>");
+
+			});
+
+		});
+
+	</script>
+</head>
+<body>
+	<div>
+	<input type="button" class="test" value="add button"/>
+    </div>
+
+</body>
+</html>
