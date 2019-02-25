@@ -8,6 +8,7 @@ public class q2 extends Thread{
         t1.start();
         t1.join();
         System.out.println("thread 1 completed");
+
         t2.start();
         t2.join();
         System.out.println("thread 2 completed");
@@ -20,5 +21,6 @@ public class q2 extends Thread{
             System.out.println(i);
         }
     }
+
 }
 
