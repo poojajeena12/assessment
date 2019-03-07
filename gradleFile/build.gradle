@@ -14,7 +14,7 @@ question 1 : Look up java plugin documentation.
 Make changes in manifest to make it executable with correct class. 
 When run using java -jar JAR_NAME_HERE the output should be text "Hello World" on the console.
 */
-/*
+
 
 sourceSets {
     main {
@@ -29,7 +29,7 @@ jar {
         attributes 'Main-class' : 'HelloWorld'
     }
 }
-*/
+
 
 
 
@@ -68,7 +68,7 @@ question 3 : add 2 files file1.xml and file1.txt in src/main/resources manually.
 make changes so that when creating jar only file1.xml is added to the jar.
 */
 
-/*
+
 sourceSets {
     main{
         resources {
@@ -77,7 +77,7 @@ sourceSets {
         }
     }
 }
-*/
+
 
 
 
@@ -131,11 +131,11 @@ repositories {
 question 6 : Write a task in file "mytasks.gradle" and use it in your build.gradle
 */
 
-//apply from : "/home/ttn/gradleFile/mytasks.gradle"
+apply from : "/home/ttn/gradleFile/mytasks.gradle"
 
-/*task mytasks{
+task mytasks{
     println("my gradle file")
-}*/
+}
 
 
 
